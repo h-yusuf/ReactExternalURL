@@ -5,10 +5,9 @@ import './App.css';
 function App() {
   useEffect(() => {
     if (navigator.userAgent.includes("Instagram")) {
-      const confirmMessage = "Anda membuka aplikasi dari Instagram. Klik OK untuk membuka link di browser eksternal.";
-      if (window.confirm(confirmMessage)) {
-        window.open("https://react-external-urls.vercel.app/", "_blank");
-      }
+      const alertMessage = "Anda membuka aplikasi dari Instagram. Klik OK untuk membuka link di browser eksternal.";
+      alert(alertMessage);
+      window.open("https://react-external-urls.vercel.app/", "_blank");
     }
   }, []);
 
